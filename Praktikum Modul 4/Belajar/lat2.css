@@ -1,0 +1,13 @@
+#luas{
+    width: 200px;
+    height: 20px;
+    border: 1px solid black;
+}
+#volume{
+    width: 200px;
+    height: 20px;
+    border: 1px solid black;
+}
+.bold{
+    font-weight: bold;
+}

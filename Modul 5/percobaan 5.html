@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>jquery plugin percobaan 5</title>
+    <link rel="stylesheet" type="text/css" href="select2.css">
+    <script src="jquery.js"></script>
+    <script type="text/javascript" src="select2.js"></script>
+</head>
+
+<body>
+    <h4>List tanpa menggunakan plugin</h4>
+    <select name="kota" id="kota">
+        <option value="kd">Kediri</option>
+        <option value="sby">Surabaya</option>
+        <option value="dps">Denpasar</option>
+        <option value="jkt">Jakarta</option>
+    </select>
+    <h4>List menggunakan plugin</h4>
+    <select name="daftar_kota" id="daftar_kota">
+        <option value="kd">Kediri</option>
+        <option value="sby">Surabaya</option>
+        <option value="dps">Denpasar</option>
+        <option value="jkt">Jakarta</option>
+    </select>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#daftar_kota').select2();
+        })
+    </script>
+</body>
+
+</html>

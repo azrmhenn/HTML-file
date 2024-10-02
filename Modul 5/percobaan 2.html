@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>jquery percobaan 2</title>
+    <script src="jquery.js"></script>art
+</head>
+<body">
+    <h3>jQuery </h3>
+    <h2>Kalkulator Penjumlahan Sederhana</h2>
+    <input type="text" name="bil1" id="bil1">
+    <input type="text" name="bil2" id="bil2">
+    <input type="button" name="hitung" id="hitung" value=" + ">
+    <input type="text" name="hasil" id="hasil">
+    <span id="result">Hasil = </span>
+    </body>
+
+</html>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#hitung").click(function () {
+            var bil1 = Number($("#bil1").val());
+            var bil2 = Number($("#bil2").val());
+            var hasil = bil1 + bil2;
+            $("#hasil").val(hasil);
+            $("#result").html("Hasil = " + hasil);
+            notif();
+        })
+    });
+</script>

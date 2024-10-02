@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>latihan 3</title>
+    <script src="jquery-3.7.1.js"></script>
+    <style type="text/css">
+        .blue {
+            color: blue;
+        }
+        #foto{
+            width: 100;
+            height: 100;
+            left: 0px;
+            top: 100px;
+            position: absolute;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <button id="warna">ganti warna</button>
+    </div>
+    <h1 id="kata">api jQuery position & offset</h1>
+    <img src="mobil.png" id="foto" >
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#warna').click(function(){
+                $('#kata').addClass('blue');
+            });
+        });
+        $(document).keydown(function (e) {
+            switch (e.which){
+                case 37://kiri
+                    $('#foto').animate({left: '-=100px'});
+                break; 
+
+                case 38://atas
+                    $('#foto').animate({top: '-=100px'});
+                break; 
+
+                case 39://kanan
+                    $('#foto').animate({left: '+=100px'});
+                break;
+
+                case 40://bawah
+                    $('#foto').animate({top: '+=100px'});
+                break;
+            }
+        }); 
+    </script>
+</body>
+
+</html>

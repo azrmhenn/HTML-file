@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Percobaan 4</title>
+    <script src="jquery-3.7.1.js"></script>
+</head>
+<body>
+    <input type="text" name="teks" id="teks">
+    <input type="button" name="add_text" id="add_text" value="Add Text"> 
+    <div id="isi"></div>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#add_text').click(function(){
+                var teks = $('#teks').val();
+                $('#isi').append('<br>'+teks);
+                $('#teks').val('');
+            });
+        })
+    </script>
+</body>
+</html>
